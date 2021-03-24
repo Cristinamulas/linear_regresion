@@ -6,7 +6,7 @@
 </p>
 
 
-# [Data Umbrella](https://www.dataumbrella.org): Crash Course in Contributing to [scikit-learn](https://github.com/scikit-learn)
+# [Data Umbrella](https://www.dataumbrella.org): Curso Intensivo de Contribución de [scikit-learn](https://github.com/scikit-learn)
 
 ## Video Transcript
 - Ponente:  [Andreas Mueller](https://twitter.com/amuellerml)
