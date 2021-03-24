@@ -9,15 +9,15 @@
 # [Data Umbrella](https://www.dataumbrella.org): Crash Course in Contributing to [scikit-learn](https://github.com/scikit-learn)
 
 ## Video Transcript
-- Speaker:  [Andreas Mueller](https://twitter.com/amuellerml)
+- Ponente:  [Andreas Mueller](https://twitter.com/amuellerml)
 - Video:  [Scikit-learn Sprint Instructions](https://youtu.be/5OL8XoMMOfA) (30 minutes)
-- PDF slides: [Crash Course in Contributing to Open Source Projects](https://github.com/data-umbrella/2020-sklearn-sprint/blob/master/data-umbrella-sprint-intro.pdf)
-- Transcriber: [Reshama Shaikh](https://twitter.com/reshamas)
+- PDF diapositivas: [Crash Course in Contributing to Open Source Projects](https://github.com/data-umbrella/2020-sklearn-sprint/blob/master/data-umbrella-sprint-intro.pdf)
+- Transcriptora: [Reshama Shaikh](https://twitter.com/reshamas)
 
 ## Key Links
 - Data Umbrella [Discord](https://discord.gg/mEzEbYT)
 - Gitter: [scikit-learn](https://gitter.im/scikit-learn)
-- **[Contributing Workflow Commands](contributing/workflow.md)** (environment set-up, repo, submitting PR)
+- **[Contributing Workflow Commands](contributing/workflow.md)** (configuración de entorno, repositorio, envío de un PR)
 - [Scikit-learn Contributing Documentation](http://scikit-learn.org/stable/developers/contributing.html)
 
 ## Video
@@ -29,11 +29,13 @@
 <a href="https://youtu.be/5OL8XoMMOfA?t=1"><img src="images/sklearn_video1.png" width="50%" /></a>
 
 
-Hey everybody, so this is an instruction video on how to contribute to open source projects, in particular to scikit-learn.  I'm Andreas Mueller, one of the core developers of the scikit-learn project.  Thanks for Reshama and Data Umbrella for organizing this sprint.  So, I really want to give you just a very brief overview of the technology behind contributing to open source and the steps of getting your first contributions in.
+¡Hola a todos! Este es un video con las instrucciones de cómo contribuir a los proyectos de open source, en particular a la librería scikit-learn. Soy Andreas Mueller, uno de los principales desarrolladores del proyecto scikit-learn. Quiero dar las gracias a Reshama y a Data Umbrella por organizar este sprint. Quiero darles un breve resumen de la tecnología que está detrás de la contribución del open source y de los pasos para seguir en vuestras primeras contribuciones. 
 
 ### Slide 2: Instructions for Sklearn (0:40) 
 <a href="https://youtu.be/5OL8XoMMOfA?t=40" target="_blank"><img  src="images/sklearn_video2.png" width="50%" /></a>
 
+
+En primer lugar, la mejor manera de comunicarse con los desarrolladores es por el canal de Gitter. Lo puedes encontrar en gitter.im/scikit-learn. Para el sprint, hay un canal llamado “sprint”:gitter.im/scikit-learn/sprint. Y también hay un canal  de scikit-learn que es el canal general: gitter.im/scikit-learn/scikit-learn. Durante este sprint, también vamos a usar Discord y durante el sprint, Discord puede ser la mejor manera de comunicarse. Pero después de que el sprint se acabe, los principales desarrolladores no van a estar en Discord, pero tu siempre puedes ir al canal de Gitter para solicitar ayuda.
 
 So first off, a great way to communicate with the developers is the Gitter channel.  You can find that at [gitter.im/scikit-learn](https://gitter.im/scikit-learn). For the sprint, there is a channel called "sprint":  [gitter.im/scikit-learn/sprint](https://gitter.im/scikit-learn/sprint).  And there is also a scikit-learn channel that's just a general channel: [gitter.im/scikit-learn/scikit-learn](https://gitter.im/scikit-learn/scikit-learn).  During the sprint we will also use a Discord and so during the sprint Discord might be the best way to communicate.  But after the sprint ends, the core developers will probably not be staying around on the Discord, but you can always go to the Gitter channel for help.
 
