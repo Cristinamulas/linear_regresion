@@ -1,4 +1,3 @@
-# linear_regresion
 
 <p float="left">
  <a href="https://www.dataumbrella.org"> <img src="images/full logo-transparent copy.png" height="40%" width="40%" /> </a>
