@@ -54,28 +54,31 @@ También, te familiarizarás con las herramientas de las ciencias de datos si es
  
 Así que ahora vamos a la parte técnica. Primero quiero hablar sobre la configuración. Si deseas desarrollar un proyecto de Python, obviamente, primero debes de tener una instalación local. Entonces, si ya tienes un entorno Python en funcionamiento, está bien. Si no, diría que simplemente instales Anaconda. Por lo general, es la forma más fácil de hacerlo. Si ya tienes un entorno de trabajo, asegúrate de que no estás usando el sistema Python en OS X, pero que estás usando un entorno separado para realizar su desarrollo. Si ya tienes una instalación de Anaconda, simplemente crea un entorno virtual separando otro entorno para el sprint.
 
-Entonces os doy el comando aquí que es: conda create -n y le di un nombre para el entorno, aquí lo llamo `sklearndev`. Y luego todos las librerías de las que dependerá: `numpy scipy matplotlib pytest sphinx cython ipykernel`. Entonces, en realidad no estamos instalando scikit-learn usando conda. Vamos a instalar la versión de desarrollo. Y entonces puede activar este entorno usando `source activate sklearndev` or `conda activate sklearndev`, creo que principalmente en Windows.
+Entonces os doy el comando aquí que es: `conda create -n` y le di un nombre para el entorno, aquí lo llamo `sklearndev`. Y luego todos las librerías de las que dependerá: `numpy scipy matplotlib pytest sphinx cython ipykernel`. Entonces, en realidad no estamos instalando scikit-learn usando conda. Vamos a instalar la versión de desarrollo. Y entonces puede activar este entorno usando `source activate sklearndev` or `conda activate sklearndev`, creo que principalmente en Windows.
 
-So I give the command here which is `conda create -n` and I gave it a name for the environment, here call it `sklearndev`.  And then all the packages that it will depend on: `numpy scipy matplotlib pytest sphinx cython ipykernel`.  So, we're actually not installing scikit-learn using conda. We're going to install the development version.  And so then you can activate this environment using `source activate sklearndev` or `conda activate sklearndev`, I think on Windows mostly.
 
 ```bash
 conda create -n sklearndev numpy scipy matplotlib pytest sphinx cython ipykernel
 source activate sklearndev
 conda install -c conda-forge sphinx-gallery
 ```
-Then, if you want to work on documentation, you also need to install the sphinx-gallery package.  This is not on main conda so you need to install it from the conda-forge channel using `conda install -c conda-forge sphinx-gallery`.
+Luego, si deseas trabajar en la documentación, también debes de instalar la librería sphinx-gallery. Esto no está en conda principal, por lo que debes de instalarlo desde el canal conda-forge usando `conda install -c conda-forge sphinx-gallery`.
 
 
 ### Slide 6: Fork sklearn on GitHub (4:57)
 <a href="https://youtu.be/5OL8XoMMOfA?t=297" target="_blank"><img  src="images/sklearn_s6.png" width="50%" /></a>
 
-All right, so now you have your python environment setup.  You have a separate environment for scikit-learn development. Now you're going to get the newest development version of scikit-learn.  To do this, first you go to the main scikit-learn repository github.com slash scikit-learn, slash scikit-learn:  [github.com/scikit-learn/scikit-learn](https://github.com/scikit-learn/scikit-learn) and you'll create a fork. The fork is basically your own personal copy of the repository on GitHub.
+Muy bien, ahora tienes la configuración de tu entorno de Python. Tienes un entorno separado para el desarrollo de scikit-learn. Ahora obtendrás la versión de desarrollo más reciente de scikit-learn. Para hacer esto, primero vete al repositorio principal de scikit-learn github.com barra scikit-learn, barra scikit-learn: [github.com/scikit-learn/scikit-learn](https://github.com/scikit-learn/scikit-learn) y crea un pull request, o un PR. El PR es básicamente tu propia copia personal del repositorio en GitHub.
+
 
 
 ### Slide 7: Clone the Fork (5:26)
 <a href="https://youtu.be/5OL8XoMMOfA?t=326" target="_blank"><img  src="images/sklearn_s7.png" width="50%" /></a>
 
-You can do this by clicking the fork button on the top right here.  This will create your personal fork and will take you there. So you can see here top left this is my fork, amueller slash scikit-learn. Amueller is my GitHub handle, so you'll have your GitHub handle there. And you can see it's a fork of scikit-learn slash scikit-learn, the main repository.
+Puedes hacer esto, haciendo clic en el botón de PR en la parte superior derecha, aquí. Esto creará tu PR personal y lo llevará allí. Para que puedan ver, aquí arriba a la izquierda, este es mi PR, Amueller slash scikit-learn. Amueller es mi identificador de GitHub, por lo que tu tendrás tu identificador de GitHub allí. Y puedes ver que es un PR de scikit-learn slash scikit-learn, el repositorio principal.
+
+
+Así que esta es ahora tu propia copia privada en GitHub. Por lo tanto, tienes acceso de escritura a esta copia y puedes realizar cambios en ella. A partir de ahí, obtendrás tu propia copia local en tu propia máquina clonándola. Y entonces está este botón verde clon o descarga que puedes ver aquí. Haces clic en esto y puedes copiar el enlace y hacer git clone con este URL. Y esto descarga una copia a tu máquina local, tu computadora portátil o PC. Cuando haces esto, una cosa que es importante es que uses HTTPS. Entonces, haz clic aquí y debes usar HTTPS y obtendrás una dirección HTTPS. Estoy usando SSH, que es más fácil si tienes las claves SSH configuradas en tu máquina local. Si no tiene las claves SSH configuradas y no las has puesto en tu cuenta de GitHub, etc., simplemente usa HTTPS. Será mucho más fácil. Una vez que descargaste el repositorio de tu clon, también querrás agregar el repositorio principal como un upstream para que puedas descargar la versión más reciente del repositorio  si alguien más realiza cambios. Puedes hacer esto dentro de tu repositorio haciendo git remote add upstream y luego la URL después de mi repositorio, github.com slash scikit-learn slash scikit-learn dot git: https://github.com/amueller/scikit-learn.git.
 
 So this is now your own private copy on GitHub. So this copy, you have write access to and you can make changes on this.  From there, you'll get your own local copy on your own machine by cloning it. And so there's this green button clone or download that you can see here.  You click on this and you can copy the link and do `git clone` with this URL. And this will download a copy to your local machine, your laptop, or PC. When you do this, one thing that's important is that you use HTTPS.  So you click here and you should use HTTPS and you'll get an HTTPS address.  I'm using SSH which is easier if you have SSH keys set up up on your local machine.  If you don't
 have SSH keys set up and you haven't put them in your GitHub account and so on, then just use HTTPS.  It's gonna be much
